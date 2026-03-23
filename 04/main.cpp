@@ -24,5 +24,30 @@ int main() {
   std::cout << "long double: " << std::numeric_limits<long double>::is_iec559
             << '\n';
 
+  double zero{0.0};
+
+  double posinf{5.0 / zero}; // positive infinity
+  std::cout << posinf << '\n';
+
+  double neginf{-5.0 / zero}; // negative infinity
+  std::cout << neginf << '\n';
+
+  double z1{0.0 / posinf}; // positive zero
+  std::cout << z1 << '\n';
+
+  double z2{-0.0 / posinf}; // negative zero
+  std::cout << z2 << '\n';
+
+  double nan{zero / zero}; // not a number (mathematically invalid)
+  std::cout << nan << '\n';
+
+  std::cout << true << '\n';
+  std::cout << false << '\n';
+
+  std::cout << std::boolalpha; // print bools as true or false
+
+  std::cout << true << '\n';
+  std::cout << false << '\n';
+
   return 0;
 }
