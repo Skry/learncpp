@@ -12,6 +12,23 @@ bool isPrime(int x) {
 
   return false; // if the user did not enter 2, 3, 5, 7, the digit must not be
                 // prime
+
+  // alternative
+  // return x == 2 || x == 3 || x == 5 || x == 7;
+
+  // alternative 2
+  /*
+    switch (x)
+    {
+        case 2: if the user entered 2
+        case 3: or if the user entered 3
+        case 5: or if the user entered 5
+        case 7: or if the user entered 7
+        return true; // then the digit is prime
+    }
+
+    return false; // otherwise the digit must not be prime
+  */
 }
 
 int getNumber() {
