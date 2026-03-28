@@ -8,7 +8,6 @@
 */
 
 #include <iostream>
-#include <string>
 
 int getNumber() {
   std::cout << "Enter a number : \n";
